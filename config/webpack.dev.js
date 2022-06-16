@@ -2,6 +2,7 @@ const path = require('node:path');
 
 const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 const common = require('./webpack.common');
 
@@ -20,5 +21,6 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
+    new ReactRefreshWebpackPlugin(),
   ],
 });
