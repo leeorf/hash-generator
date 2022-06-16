@@ -14,7 +14,7 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   moduleNameMapper: {
-    '@/(.*)': '<rootDir>/src/client/$1',
+    '@/(.*)': '<rootDir>/src/$1',
     '\\.(css|less|scss)$': 'identity-obj-proxy',
   },
   coverageDirectory: 'coverage',
