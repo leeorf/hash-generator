@@ -8,7 +8,7 @@
 
 ## General
 
-- [ ] Display sofware version
+- [x] Display sofware version
 
 ## Input
 
