@@ -7,5 +7,18 @@ type Props = {
 export const Input = ({ testId }: Props) => {
   const [isHidden, setIsHidden] = useState(true);
 
-  return <input type={isHidden ? 'password' : 'text'} data-testid={testId} />;
+  const toggleVisibility = () => setIsHidden(!isHidden);
+
+  return (
+    <div>
+      <input type={isHidden ? 'password' : 'text'} data-testid={testId} />
+      <button
+        type="button"
+        onClick={toggleVisibility}
+        data-testid={`${testId}-visibility-toggle`}
+      >
+        O
+      </button>
+    </div>
+  );
 };
