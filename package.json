@@ -8,7 +8,18 @@
   "scripts": {
     "prepare": "husky install",
     "dev": "webpack serve --config config/webpack.dev.js",
-    "test": "jest --passWithNoTests --no-cache --runInBand --config config/jest.config.js"
+    "pre-commit": "lint-staged",
+    "pre-push": "yarn test:coverage",
+    "test": "jest --passWithNoTests --no-cache --runInBand --config config/jest.config.js",
+    "test:watch": "yarn test --watch",
+    "test:staged": "yarn test --findRelatedTests",
+    "test:coverage": "yarn test --coverage"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn test:staged"
+    ],
+    "!*.js": []
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
@@ -23,6 +34,7 @@
     "husky": "^8.0.1",
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
+    "lint-staged": "^13.0.2",
     "prettier": "^2.7.1",
     "react-refresh": "^0.14.0",
     "ts-jest": "^28.0.5",
