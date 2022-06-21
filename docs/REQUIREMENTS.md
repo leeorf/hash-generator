@@ -12,7 +12,7 @@
 
 ## Input
 
-- [ ] Allow all characters
+- [x] Default to hide input
 - [ ] Show and hide hash input
 - [ ] Animation of copy to clipboard
 - [ ] No validation
