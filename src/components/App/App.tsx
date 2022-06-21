@@ -1,7 +1,12 @@
-import { TestID } from '@/constants';
+import * as S from './styles';
 
-export const App = () => (
-  <div data-testid={TestID.APP_GRETTING}>
-    <h1>Hello world</h1>
-  </div>
-);
+export const App = () => {
+  return (
+    <>
+      <S.GlobalStyles />
+      <S.Content>
+        <h1>App is here</h1>
+      </S.Content>
+    </>
+  );
+};
