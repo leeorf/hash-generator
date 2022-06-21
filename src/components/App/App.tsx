@@ -1,4 +1,5 @@
 import { Footer } from '@/components/Footer';
+import { Input } from '../Input';
 
 import * as S from './styles';
 
@@ -7,7 +8,7 @@ export const App = () => {
     <>
       <S.GlobalStyles />
       <S.Content>
-        <h1>App is here</h1>
+        <Input />
       </S.Content>
       <Footer />
     </>
