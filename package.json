@@ -16,10 +16,10 @@
     "test:coverage": "yarn test --coverage"
   },
   "lint-staged": {
-    "*.js": [
+    "*.{ts,tsx}": [
       "yarn test:staged"
     ],
-    "!*.js": []
+    "!*.{ts,tsx}": []
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
