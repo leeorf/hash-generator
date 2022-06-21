@@ -14,4 +14,19 @@ describe('Input', () => {
 
     expect(input.type).toBe('password');
   });
+
+  test('should be able to trigget input visibility', () => {
+    const component = render(<Input testId={TestID.GENERIC_INPUT} />);
+
+    const input = component.getByTestId(
+      TestID.GENERIC_INPUT
+    ) as HTMLInputElement;
+    const toggleVisibilityButton = component.getByTestId(
+      `${TestID.GENERIC_INPUT}-visibility-toggle`
+    );
+
+    fireEvent.click(toggleVisibilityButton);
+
+    expect(input.type).toBe('text');
+  });
 });

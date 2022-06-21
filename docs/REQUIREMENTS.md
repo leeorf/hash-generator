@@ -13,7 +13,7 @@
 ## Input
 
 - [x] Default to hide input
-- [ ] Show and hide hash input
+- [x] Show and hide hash input
 - [ ] Animation of copy to clipboard
 - [ ] No validation
 - [ ] Max length
