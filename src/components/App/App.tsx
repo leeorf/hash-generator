@@ -1,3 +1,5 @@
+import { Footer } from '@/components/Footer';
+
 import * as S from './styles';
 
 export const App = () => {
@@ -7,6 +9,7 @@ export const App = () => {
       <S.Content>
         <h1>App is here</h1>
       </S.Content>
+      <Footer />
     </>
   );
 };

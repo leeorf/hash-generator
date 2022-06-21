@@ -1,3 +1,3 @@
 export const TestID = {
-  APP_GRETTING: 'greeting',
+  VERSION: 'version',
 };
