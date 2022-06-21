@@ -16,6 +16,7 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   moduleNameMapper: {
     '@/(.*)': '<rootDir>/src/$1',
+    '@package': '<rootDir>/package.json',
     '\\.(css|less|scss)$': 'identity-obj-proxy',
   },
   coverageDirectory: 'coverage',

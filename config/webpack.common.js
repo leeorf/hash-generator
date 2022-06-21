@@ -21,6 +21,7 @@ module.exports = {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
       '@': path.join(__dirname, '..', 'src'),
+      '@package': path.join(__dirname, '..', 'package.json'),
     },
   },
   plugins: [new CleanWebpackPlugin()],
