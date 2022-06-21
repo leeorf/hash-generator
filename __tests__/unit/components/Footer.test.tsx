@@ -1,6 +1,7 @@
+import { render } from '@testing-library/react';
+
 import { Footer } from '@/components/Footer';
 import { TestID } from '@/constants';
-import { render } from '@testing-library/react';
 
 describe('Footer', () => {
   test('should be able to see sofware version following semantic versioning', () => {
