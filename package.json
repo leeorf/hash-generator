@@ -1,8 +1,8 @@
 {
-  "name": "sha1-generator",
+  "name": "hash-generator",
   "version": "0.1.0",
   "main": "index.js",
-  "repository": "git@github.com:leeorf/sha1-generator.git",
+  "repository": "git@github.com:leeorf/hash-generator.git",
   "author": "Leonardo Rodrigues <leo.rf.dev@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -17,6 +17,7 @@
     "@testing-library/react": "^13.3.0",
     "@types/jest": "^28.1.1",
     "@types/react-dom": "^18.0.5",
+    "@types/styled-components": "^5.1.25",
     "clean-webpack-plugin": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
@@ -33,6 +34,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.5"
   }
 }
